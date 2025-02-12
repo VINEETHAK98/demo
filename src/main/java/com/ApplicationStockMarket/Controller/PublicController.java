@@ -80,7 +80,7 @@ public class PublicController {
 
 	    @PostMapping("/login")
 	    public ResponseEntity<?> login(@RequestBody StockUser user) {
-
+System.out.println("dss");
 	        return new ResponseEntity(stockUserService.verify(user),HttpStatus.FOUND);
 	    }
 
